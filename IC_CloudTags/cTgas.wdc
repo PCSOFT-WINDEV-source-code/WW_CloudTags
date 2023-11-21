@@ -1,0 +1,335 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : cTag
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x18d753e80029c612
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      CONSTANT
+      	CS_MAX = -1
+      	CS_Min = 99999999
+      END
+      
+      
+      cTag is Class
+      	
+      PUBLIC CONSTANT
+      	m_nMAX_SIZE  	is int = 36							// Maximum size of the font for a tag
+      	m_nMIN_SIZE  	is int = 9							// Minimum size of the font for a tag
+      	m_sCONNECTION 	is string = "gntConnectionTag"			// Connection on the file
+      	
+      PRIVATE
+      	m_sErrMess		is string = ""							// Contains the error message
+      	m_aaTagList 		is ASSOCIATIVE ARRAY of int				// Array that groups the tags and their respective font size
+      	
+      END
+      
+     type : 131072
+  procedures :
+   -
+     name : Constructor
+     procedure_id : 1789991632803382802
+     type_code : 27
+     code : |1+
+      // Summary: <specify the action of the procedure>
+      // Syntax:
+      // Constructor ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      // Example:
+      // Indicate an example.
+      //
+      PROCEDURE Constructor()
+      
+     type : 589824
+   -
+     name : Destructor
+     procedure_id : 1789991632803448338
+     type_code : 28
+     code : |1+
+      // Summary: <specify the action of the procedure>
+      // Syntax:
+      // Destructor ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      // Example:
+      // Indicate an example.
+      //
+      PROCEDURE Destructor()
+      
+     type : 655360
+   -
+     name : SetMinSize
+     procedure_id : 1789991632803513874
+     type_code : 12
+     code : |1-
+      // Summary: This function is used to modify the minimum size of the character font used to display the tags
+      // Description of input/output parameters of 'SetMinSize':
+      //
+      // Syntax:
+      //[ <Result> = ] SetMinSize (<nMiniSize> is int)
+      //
+      // Parameters:
+      //	nMinSize (integer): Size of the font
+      // Return value:
+      // 	boolean: True if the assignment was successfully performed, False otherwise. ErrorInfo returns the details of the error 
+      
+      PROCEDURE SetMinSize(nMiniSize is int)
+      
+      // The minimum size must be less than the maximum size and greater than 0
+      IF 0 < nMiniSize < :m_nMAX_SIZE  THEN
+      	:m_nMIN_SIZE = nMiniSize
+      ELSE
+      	:m_sErrMess = "The minimum size of the font must be less than the maximum size and greater than 0."+CR+"The maximum size is: " + :m_nMAX_SIZE
+      	RESULT False
+      END
+      
+      RESULT True
+     type : 458752
+   -
+     name : InfoError
+     procedure_id : 1789991632803579410
+     type_code : 12
+     code : |1+
+      // Summary: Returns the details of the current error
+      // Description of input/output parameters of 'ErrorInfo':
+      //
+      // Syntax:
+      //[ <Result> = ] ErrorInfo ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	UNICODE string:  returns the error details
+      
+      PROCEDURE InfoError()
+      
+      RESULT :m_sErrMess
+     type : 458752
+   -
+     name : SetMaxSize
+     procedure_id : 1789991632803644946
+     type_code : 12
+     code : |1-
+      // Summary: This function is used to modify the maximum size of the character font used to display the tags
+      // Description of input/output parameters of 'SetMaxSize':
+      //
+      // Syntax:
+      //[ <Result> = ] SetMaxSize (<nMaxiSize> is int)
+      //
+      // Parameters:
+      //	nMaxSize (integer): Size of the font
+      // Return value:
+      // 	boolean: True if the assignment was successfully performed, False otherwise. ErrorInfo returns the details of the error 
+      
+      PROCEDURE SetMaxSize(nMaxiSize is int)
+      // The minimum size must be less than the maximum size and greater than 0
+      IF :m_nMIN_SIZE < nMaxiSize < 200  THEN
+      	:m_nMAX_SIZE = nMaxiSize
+      ELSE
+      	:m_sErrMess = "The maximum size of the font must be greater than the minimum size and less than 200."+CR+"The minimum size is: "+:m_nMIN_SIZE
+      	RESULT False
+      END
+      RESULT True
+     type : 458752
+   -
+     name : DatabaseConnection
+     internal_properties : CAAAAAgAAAB0dNaqECdYjx3qtPd1fHV5TY3DZvZW3qJmX6QHzxSWRu9xYrVCYgpP7L1+h7JgZr1D+C1hIJGnSKD4czWmITIZ9e78yeYg0Kr5G7P0liOZqZCSlybXqyTCEikRBDAzSE48Uu5VbBy/59OJOHre6Ah7NNtUMFSooLC9YYzTTYJvQZ45bsEwbG7GipR68SlKrpEhDrzqM73Mj1LIYjlxFAmhs59EgWh/vVRvopNW/VNvsVr6HZOv+zSwSuapisIMl3zv
+     procedure_id : 1789991632803710482
+     type_code : 12
+     code : |1+
+      // Summary: This method is used to establish the connection to the database (HF, MySQL, ...)
+      // Description of input/output parameters of 'DatabaseConnection':
+      //
+      // Syntax:
+      //[ <Result> = ] DatabaseConnection (<sProvider> is string, <sServer> is string, <sLogin> is string, <sPwd> is string, <sDatabaseName> is string)
+      //
+      // Parameters:
+      //	sProvider (UNICODE string): Provider. For HF Classic, specify "hAccessHF7" and the access path to the file in the sServer variable
+      //	sServer (UNICODE string): Data server (IP) or access path to the file if sProvider = hAccessHF7
+      //	slogin (UNICODE string): User name
+      //	sPwd (UNICODE string): Password
+      //	sDatabase (UNICODE string): Name of the database
+      // Return value:
+      // 	boolean:  True if the connection was established, False otherwise. ErrorInfo returns the details of the error
+      
+      PROCEDURE DatabaseConnection(sProvider is string, sServer is string, slogin is string, sPwd is string, sDatabaseName is string)
+      
+      HCloseConnection(:m_sCONNECTION)
+      IF HOpenConnection(:m_sCONNECTION,slogin,sPwd,sServer,sDatabaseName,sProvider) THEN
+      	IF HChangeConnection(Tag,:m_sCONNECTION) THEN
+      		HCreationIfNotFound(Tag)		
+      		RESULT True
+      	END
+      END
+      
+      :m_sErrMess = ErrorInfo(errInfo)
+      RESULT False
+     type : 458752
+   -
+     name : _AssignSizeOfTag
+     internal_properties : CAAAAAgAAAC6jEoQtvaTADL3sIiQMCr/cJC1yOM93SQlVAqvL/HciKT5jZLC9V//uxlHiF3CcGL5pAy903g1W95Ef3Kt0EjCX5GVuSThkI0pwibWZLNPVbdpYGDruroKcbJj9A8WFx3qfNQaMqMiGovSA5deuAAs9A+8f6jpdd9xOkPkPzx9hQ3sA6urri/Ny7x0gD5PqOA/AzIrGw==
+     procedure_id : 1789991632803776018
+     type_code : 12
+     code : |1-
+      // Summary: Defines the size of each tag
+      // Description of input/output parameters of '_AssignSizeOfTag':
+      //
+      // Syntax:
+      //[ <Result> = ] _AssignSizeOfTag ()
+      //
+      
+      PROCEDURE _AssignSizeOfTag()
+      
+      nMinFreq is int = ::CS_Min
+      nMaxFreq is int = ::CS_MAX
+      xRatio is numeric
+      
+      sSQL is string = "SELECT Tag, NbTag FROM Tag ORDER BY Tag ASC"
+      dsQRY is data source
+      sTag is string
+      nFreq is int
+      sSize is string
+      
+      IF NOT HExecuteSQLQuery(dsQRY,hQueryDefault,sSQL) THEN
+      	:m_sErrMess = ErrorInfo(errFullDetails)
+      	RESULT False
+      ELSE
+      	HReadFirst(dsQRY)
+      	WHILE NOT HOut()
+      		IF dsQRY.nbTag < nMinFreq THEN nMinFreq = dsQRY.nbTag 
+      		IF dsQRY.nbTag > nMaxFreq THEN nMaxFreq = dsQRY.nbTag 
+      		:m_aaTagList[dsQRY.tag] = dsQRY.nbTag
+      		HReadNext(dsQRY)
+      	END
+      	// We know the minimum frequency and the maximum frequency
+      	// Calculate the size of the font for each tag.
+      	// Calculate the ratio
+      	xRatio = (:m_nMAX_SIZE-:m_nMIN_SIZE)/(nMaxFreq-nMinFreq)
+      	// Calculate the size for each tag
+      	FOR ALL ELEMENT nFreq, sTag of :m_aaTagList
+      		sSize = Round(:m_nMIN_SIZE+((nFreq-nMinFreq)*xRatio))
+      		:m_aaTagList[sTag] = sSize
+      	END
+      END
+      
+      RESULT True
+     type : 458752
+   -
+     name : BuildHTMLScript
+     internal_properties : CAAAAAgAAAB2Vs29To7gYW18pUB8wbGybaEuH94GprJOHxx4vVGZhedZuj1aCmKHlHXWL0oIxUypqwXr2lnV+B7kf3EUlZr3W1jgsxDwfkZLn5vUcPOBD3Ig8xQtL55yfN1Z1KqrPFjJRWnY1+l6HmDon9kdo/9UYa6ne99lG0ciIIvyjMVS+tO8eTQDEUkh12OJGBD1JcMjW8TSm/WkRzpA6pGpTBGpW+yW5ruTcQDzTneaOTgrBYp5bE883+HtvSvONkZ5dV7x
+     procedure_id : 1789991632803841554
+     type_code : 12
+     code : |1+
+      // Summary: This method is used to list the tags in HTML format in a list.
+      // Description of input/output parameters of 'BuildHTMLScript':
+      //
+      // Syntax:
+      //[ <Result> = ] BuildHTMLScript ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	Undefined type: 
+      
+      PROCEDURE BuildHTMLScript()
+      
+      sTag is string
+      nSize is int
+      sId is string
+      
+      // &nbsp;&nbsp;
+      sScriptEx is string = [
+      	<li><a href="%1" style="font-size:%2px" title="%3">%3</a></li>
+      ]
+      // in href, include "javascript:ProcName(param1,param2);"
+      sScript is string = [
+      	<ul id="TagLinkStyle">
+      ]
+      
+      IF NOT :_AssignSizeOfTag() THEN
+      	RESULT False
+      ELSE
+      	FOR ALL ELEMENT nSize,sTag of :m_aaTagList
+      		// Search for the ID of the tag. Retrieve the first one found
+      		HReadSeekFirst(Tag,Tag,sTag)
+      		IF HFound() THEN
+      			sId = Tag.Link
+      		ELSE
+      			// Unlikely event.
+      			// The associated link is not found
+      			sId = ""
+      		END
+      		sScript += StringBuild(sScriptEx,sId,nSize,sTag)
+      	END
+      	
+      	RESULT sScript+"</ul>"
+      END
+      
+     type : 458752
+   -
+     name : AddTag
+     internal_properties : CAAAAAgAAAAQMnS+2Ww4gOL3GMjoqHKPYKBtqDuV/ZytbJoHr7H84CwhvfpSdcd/+2lvaAVqyBLZRDTdW9A1UwZcD9oN4Cga5+nlodRhCC2polqS8A/j2duNJPSnpq5+rR7ncItye/HO0Lg+Du9mzqceN3N61KTQKEMQk2SVqYOdxqfA+xghqTEAB+9nyrNhB6g4TNrbHzvtsWB9tQ==
+     procedure_id : 1789991632803907090
+     type_code : 12
+     code : |1+
+      // Summary: Adds a tag into the data file
+      // Description of input/output parameters of 'AddTag':
+      //
+      // Syntax:
+      //[ <Result> = ] AddTag (<sTagName> is string, <nRef> is string, <nbTag> is int)
+      //
+      // Parameters:
+      //	sTagName (string): Name of the tag
+      //	nRef (string): HTTP link
+      //	nbTag (integer): Weight of the tag
+      // Return value:
+      // 	boolean:   True if everything was successful
+      
+      PROCEDURE AddTag(sTagName is string, nRef is string, nbTag is int)
+      
+      // Search for the existence of the tag
+      HReadSeekFirst(Tag,Tag,sTagName)
+      IF HFound() THEN
+      	:m_sErrMess = "The tag already exists!"
+      	RESULT False
+      END
+      Tag.Tag = sTagName
+      Tag.Link = nRef
+      Tag.NbTag = nbTag
+      IF NOT HAdd(Tag) THEN
+      	:m_sErrMess = "Error while adding the Tag into the file"
+      	RESULT False
+      END
+      
+      RESULT True
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x171f77ed0011a648
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

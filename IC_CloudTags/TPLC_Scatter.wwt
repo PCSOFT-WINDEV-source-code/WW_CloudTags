@@ -1,0 +1,177 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : TPLC_Scatter
+ major_version : 28
+ minor_version : 0
+ type : 65543
+ description : ""
+ subtype : 8192
+page :
+ name : TPLC_Scatter
+ identifier : 0x26a238390468d93e
+ internal_properties : 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
+ properties : {}
+ controls :
+  -
+    name : TPLC_Scatter
+    identifier : 0x26a238390469d93e
+    internal_properties : CAAAAAgAAACy/x5hQShCf4CFpOOWYWC48A3BEgmxJKzzeW6ggJdv47C6gBOvf7Lfk6quwv8BCHiNBorKBb8GFjaC+VZTx2rrNmgF1IsKnoqYJlvVgCR/R5E8isGDdnpjnncHm+8GMpD/sAlp8csmhZ2mL478zk0zKUdeOzUmYLKqaV/NEfwzfRH7fRltwz9u3bVtWnMgOXexzt+GwxrHHQiOzqvGlmoeRY2Sb73CT+R+MZhbdCeYGZ/OXr/dpPx0pB9CfceUhL498RpDUqktOIWzSAFs33jrgZ031BVkPha1ZPXRzduTq462EhuT3WwGJwNNY/F65EcXhVxlJHIxkxXEwoW+B8OgKVROBonAqH0gMLDzZpx0uXFxwHKUlIeTPPEYsxAyKZQ7rGVVxuNj6R+eoN4s6t5aCsypUulP0DTqy/NhjFKcRDRyLfDS1ll7pPhaTkolYndGfgpC2UU8YD59mrZJfuUzyX7ytXceWtxAwg0lQv0v7jnJFXFmmOWY+T6eD1JDKjY7EsFjHZSNLSRaeQNKT7Lgmza5OgrXlgw5Bh7McEfpmzoE7ngr7eQQseD06CnQm9CkJobibwz/0rWENU68qNURNuxg3/NQDIFyCGjp/WLRFyU2c7yo7RoJcl2Esww4Y4UOZd08SvznaPDXfvi3A4bpYOKYnD8YZYMTmyqINSLjgv2iBpn4r9Apzbgoj8ktlFEikYMsspvBTTFGrWCk8cZhPA8uPhIoLhcppcHDf228TF/GTEJBxxU+fTZoAr3B0G3+x/VbhbE4WGYRwt6N76wja1pS+vawfoZy5QxRy4GAHFQm9EWm+hNpWh+r45Z56gknvphS76fAg7QLeH7Sux7lwMpOuVQYHMdsb3XX/xa7vA==
+    properties :
+     width : 300
+     height : 50
+    controls :
+     -
+       name : RTA_Cloud
+       identifier : 0x26a23839046ad93e
+       internal_properties : CAAAAAgAAAB7YXVIq44sac7pGrs3N9SVmvOsPHwloxwT+heDEO9X9vCb+lvCJSXcjXUKMTop3v0j+tqXyvWmCjnD8u5mERDXMXUdfLsQAUkYBIIITBFc5QmjtoExehvGAdoN1kAP6m4t2NEMPa+9VmEjPajg2gMz2NAz2z2dSKZAx6QWoy93n9tAP19G8oqFQFK0YAa7hbBJA+hketphlCiDpp/CihBcxHCO6ZUvtHeZc1gw0b1A6qaiFvhH9rx7tO+qRznFMzk1TjW9WPqEEIV3+Ira3rmFqrk5RW97PUvytedbcTs/nE7pB3muwDXFC0WcX0FyvE1fzftZTjjYP2Sx6bFQ89o5b7Lk4cFM/l48zzv14aIIaGHOavIgDJCarMRY2gBHBM2rO7OyiNtAO/0xMkmAcbmWsH+8zRLpJAibOt2y6posGEvmVT5hY8TYFkEIZhXy72VNMX871uxruw67ZZEzbU/5B1s+TqBFIPqsB9Sjq0BNlWtSS4MQQYjKe5UBMMx/t1cq10NqDJYfPQJgVhXy74BlnXsTOkWALEGjsEojMj9hBkhI88gqDozAxYGfUtzYSj+z0+Kt+L/GhULlth8jICDth3ARZKjXG7B/cRZiO9l/rSAe13UopQU7lRSc1cLM/JHwqPgi/rL07y2e1Ad41GECxD08YNfjoYSQvYlbrbnZs4SfBDew48Lnc3YfDDBKKJD/S6vy7m2yIzAV/VASJ1HS06N3LNhN2nRQphfEcQkx5UE4Bf1PUlKn2yvyNqrJntpCZTg2gOAGCA39jldCm8zic/A/0FFVFbJt1mXV91piYerep3XmV9IrvQXKN92hynxKJH3qKw3FL2ET66hAdE+JTViW03Iaa29bh6cdPPzLKAd5Psvuisvy7u7/r1bg/EccNVESDeowzOWxRKc408uJd9zV5RVyWOV9SOsN7rBdTHf67oiQi6S7k93+FkVTeOKOdH2VwWrHRn9uXCYhS4ivnN7dYM3oue0TQVyyN79CzIgOOs19cqBGXN/AxMTkMMMkCcUNVvUKGFAKqZt0G6AwCg2LPgTYAt809wUHlDp+mn5KyvAX9AOeASoNZmuOQG5m0COdtbTge09onQ8GbP5iG+w5dhVHamFNg4TlG8merNSo15HvQNfmlP/awH2dlvFDwPhbonedj2BGWD2ag1BDcN3FZIzIwI75Tf73dcDvQ9Rd2D0v6b1MY4UBXpZc4isd3/imK4zCLdqzL9r56GVS0J7WTqaG6SFDIKaYS1+fu1zV25HUgUPtlbd4HQT/RR2yEmZzedOhEvcOifyjCp3/llOAmU5CGTMIsWtGsIlovqFyaLF2C030p32b58/+qq1q0+zHSb4nG5xMC3jDlQ80SX3nPTqtxYhqtGCTmbBvhM4exwSzSUvx08WYVe7EoTPbbfArscDF+PisDf5OPwpK95b+QR4qhg2DKWSS1kkXf2PsT3vcaXv/9hn5SBPgGufH3DSkn3+Cvgm4XPH/Ig0SVDXxG7rMtYqfBRyqw0IjpL3m+U3k8s0daBRaJ3YSGY5RaqCzXDl8Ho9l1QywXk2wJRHI5qpGWG6BlSqBENcgVLMzGhVqK7cmHNQUSbhaXyhT5qOwowArwdC9QLho/ywt83ddHFYZW04rKQWRFiaXXO4NHrxTkXx+CbhliD4B4aDByMn6gWV7+2eb6Xw+SjRnc8gyeX0Y6UfevwneY7I+F2frKYNSFc5S6dCaRSKRraopZ2m+0w31hl/W/lvNcopsORZrHAmcUKojo9Gkmkkavr6X3cbfl16u3Ub7TainSKAHdPg=
+       properties :
+        width : 300
+        height : 50
+       type : 109
+       code_elements :
+        type_code : 132
+        alias : C1
+        p_codes :
+         -
+           type : 851998
+           role : N
+         -
+           type : 852005
+           role : N
+         -
+           internal_properties : CAAAAAgAAAC8gmh+MC4QrU0utgNBfl0Ba/jqg1LK+Dwp8MhpUhqrFXKYnYkcdsFAaHOY6ObpQ/xfKfSxjrQterWfXIxYE+XU8eTa3dgHHYih6pD5FI+viG7ChbqMzBs=
+           type : 852227
+         -
+           type : 1310979
+           enabled : false
+         -
+           type : 852228
+           role : N
+    type : 42
+    code_elements :
+     type_code : 92
+     alias : C2
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAACRRrCTe6AJlFSOLwPbaI4TbR+j94zF2KfgE2IRWl87mG9pdYTwRiOAGfh16I3OtMFUc6RP1rRLbGiBFWmZuXccLmZmJySGQivdVfnqR1j4QHVv4VTpSFEMTS1493VlU3UI2xOooUiF5pdgLTwkCyBCgu90kC3/7ELuvLNlyhcRnMzr7Ehj4CAZIbbiVdzDwqdFVEdEVy+JW3iJjXbckNo=
+        code : |1-
+         
+         gclATag is cTag
+         
+         // CSS header
+         gsCssHeader is string = [
+         	<style>
+         	ul#TagLinkStyle{
+         	list-style-type: none ;
+         	/* Delete the margin, padding and tags from <ul> */
+         	}
+         	ul#TagLinkStyle li
+         	{
+         	margin: 0 0 5px 0 ;
+         	padding: 0 ;
+         	float: left;
+         	/* Delete the padding from <li> and define a bottom margin of 5px */
+         	}
+         	
+         	ul#TagLinkStyle li a
+         	{
+         	float: left;
+         	line-height: 30px ;
+         	color: %1 ;
+         	text-indent: 15px ; /* Shift the text by 15px from the left border */
+         	text-decoration: none ;
+         	}
+         	
+         	ul#TagLinkStyle li a:hover
+         	{
+         	color: %2 ;
+         	text-decoration:underline;
+         	}
+         	</style>
+         ]
+         
+         // Colors
+         gsCssHeader = StringBuild(gsCssHeader,RGBToHTML(ColorPalette(colorTextLink1,1)),RGBToHTML(ColorPalette(colorTextLink1,2)))
+         
+         // Header
+         MyPage..HTMLHeader += gsCssHeader
+        type : 851968
+      -
+        internal_properties : CAAAAAgAAAAQ38y6530+WEP+867S9yx/W0CBfRQFhK5ZAzejVc+2T3foPDlNDReP7rob+bXirxTXgG+/I0319P9QYm3foIP7aFM6Z6qecxAFaYKgBcAp3T6FFD31XeUr5/1vPrzvLuFSGUvfZo06wwDpAQ==
+        code : |1-
+         
+         // Connection to a HyperFileSQL Classic file
+         IF NOT gclATag:DatabaseConnection(hAccessHF7,fDataDir(),"","","") THEN
+         	Error("Error:"+gclATag:InfoError())
+         END
+         
+         // Generate the HTML code for the cloud of tags
+         sHTMLScript is string = gclATag:BuildHTMLScript()
+         
+         // Display the cloud in the RTA
+         RTA_Cloud = sHTMLScript
+        type : 851980
+      -
+        type : 852298
+        role : N
+      -
+        type : 851999
+        role : N
+      -
+        type : 852227
+        enabled : false
+      -
+        type : 1310979
+        enabled : false
+      -
+        type : 852228
+        role : N
+        enabled : false
+ type : 1
+ languages :
+  - en-GB
+ code_elements :
+  internal_properties : CAAAAAgAAAAbtNmSqtsOkx+QsZf2+WanOeFBVnc5uYmf5qmuvsRGWGuytMQn3hxD44bzPpedRjj3oPOr98XPV19NTS+YHw==
+  type_code : 91
+  p_codes :
+   -
+     type : 852298
+     role : N
+   -
+     type : 851999
+     role : N
+   -
+     type : 852000
+     role : N
+   -
+     internal_properties : CAAAAAgAAAC8gmh+MC4QrU0utgNBfl0Ba/jqg1LK+Dwp8MhpUhqrFXKYnYkcdsFAaHOY6ObpQ/xfKfSxjrQterWfXIxYE+XU8eTa3dgHHYih6pD5FI+viG7ChbqMzBs=
+     type : 852167
+   -
+     type : 852169
+     role : N
+   -
+     type : 852225
+     role : N
+   -
+     internal_properties : CAAAAAgAAAC8gmh+MC4QrU0utgNBfl0Ba/jqg1LK+Dwp8MhpUhqrFXKYnYkcdsFAaHOY6ObpQ/xfKfSxjrQterWfXIxYE+XU8eTa3dgHHYih6pD5FI+viG7ChbqMzBs=
+     type : 852227
+   -
+     type : 1310979
+     enabled : false
+   -
+     type : 852228
+     role : N
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : MDLC_SansNom1
+resources :
+ string_res :
+  identifier : 0x15ad125c000b18a5
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+webification :
+ internal_properties : CAAAAAgAAACYzxT95H3qP7nIys4LqA==
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe
